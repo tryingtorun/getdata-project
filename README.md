@@ -4,16 +4,20 @@
 In order to make this project reproductible on other systems, and since the Dataset for this project is not included in the repository, the instructions for running the 'run_analysis.R' script are as follows:
 
 1. You will need to first set a variable named 'dataSetLocation' from within the R console. This variable will need to be set to the exact static location where the UCI HARD Dataset files reside. Since relative file paths and spaces in the folder name were causing errors in a Windows environment, the location of the folder has been left outside of the script to be set on a per user environment basis.
+	```	
 	Example: 
-			dataSetLocation <- paste(getwd(),"/UCIHARDataset",sep="")
-			//Sets 'dataSetLocation' to "C:/Users/username/Documents/UCIHARDataset"
+		dataSetLocation <- paste(getwd(),"/UCIHARDataset",sep="")
+		//Sets 'dataSetLocation' to "C:/Users/username/Documents/UCIHARDataset"
+	```
 
-2. You will need to run the 'run_analysis.R' script from the R console where the 'dataSetLocation' variable has been defined. 
+2. You will need to run the 'run_analysis.R' script from the R console where the 'dataSetLocation' variable has been defined.
+	```
 	Example:
 			sourcePath <- paste(getwd(),"/GitHub/getdata-project/run_analysis.R",sep="") 
 			//Gets the static path to the script in the GitHub repository 'getdata-project'
 			source(sourcePath) 
 			//Runs the script
+	```
 
 # How run_analysis.R Works
 
