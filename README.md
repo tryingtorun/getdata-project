@@ -29,6 +29,7 @@ The Untidy Data Set consisted of the following (data) files:
 	(as well as many raw data files in /train/Inertial Signals and /test/Intertial Signals folders)
 
 To transform this mass of information into 'tidy' data, the data files above were combined and modified in the following manner:
+
 1. Loading Data
 --1. The single column of data from /train/subject_train.txt and other single column of data from /test/subject_text.txt were combined into a single column of data using the row bind function.
 --2. features.txt was used as the 561 element vector of column names when reading in the 561 element per row /train/X_train.txt and /test/X_test.txt tables.

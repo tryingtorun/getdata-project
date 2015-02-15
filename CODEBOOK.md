@@ -1,5 +1,7 @@
 # CODEBOOK for Tidy UCI HARD Dataset
 
+This Codebook defines the variables found in the Tidy Dataset created from the UCI HARD dataset. The Tidy Dataset consists of a single table with only means and standard deviations of the many features originally recorded. In addition, data has been aggregated and averaged per Subject, per Activity (so many columns are averages of averages).
+
 Column | Type | Values | Summary
 --- | --- | --- | ---
 Subject | Numeric  | 1-30 | Test subject that was observed.
