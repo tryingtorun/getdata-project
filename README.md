@@ -31,16 +31,16 @@ The Untidy Data Set consisted of the following (data) files:
 To transform this mass of information into 'tidy' data, the data files above were combined and modified in the following manner:
 
 1. Loading Data
---1. The single column of data from /train/subject_train.txt and other single column of data from /test/subject_text.txt were combined into a single column of data using the row bind function.
---2. features.txt was used as the 561 element vector of column names when reading in the 561 element per row /train/X_train.txt and /test/X_test.txt tables.
---3. The two X data frames were merged together, also using the row bind function.
---4. Just as in step 1.1 both /train/y_train.txt and /test/y_test.txt were loaded and merged together with row bind.
+⋅⋅1.The single column of data from /train/subject_train.txt and other single column of data from /test/subject_text.txt were combined into a single column of data using the row bind function.
+⋅⋅2. features.txt was used as the 561 element vector of column names when reading in the 561 element per row /train/X_train.txt and /test/X_test.txt tables.
+⋅⋅3. The two X data frames were merged together, also using the row bind function.
+⋅⋅4. Just as in step 1.1 both /train/y_train.txt and /test/y_test.txt were loaded and merged together with row bind.
 2. The X data frame, produced in step 1.3, the columns in the data set were reduced to only those with 'mean' or 'std' in the label (the labels set in step 1.2).
 3. The y data frame, produced through step 1.4, was then merged with the /activity_labels.txt data by matching and replacing numeric values with their respective labels in the y data.
 4. Since the data was loaded in step 1.2 with the feature list as the data column names, this extra step was not required.
 5. Tidying Data
---1. The data frames for Subject, x/Observation, and y/Activity data as they were created and modified in steps 1.1, 2, and 3, are all merged together into a single data frame using the column bind function.
---2.) The data frame produced in 5.1 is then aggregated to find the average of all fields (except the Subject and y/Activity), grouped by Subject and y/Activity.
+⋅⋅1. The data frames for Subject, x/Observation, and y/Activity data as they were created and modified in steps 1.1, 2, and 3, are all merged together into a single data frame using the column bind function.
+⋅⋅2.) The data frame produced in 5.1 is then aggregated to find the average of all fields (except the Subject and y/Activity), grouped by Subject and y/Activity.
 
 When the script runs you will see output for each step the script takes. The script's console output is expected to look as follows:
 
